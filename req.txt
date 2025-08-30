@@ -1,0 +1,4 @@
+backtesting
+pandas_ta
+smartmoneyconcepts
+requests
