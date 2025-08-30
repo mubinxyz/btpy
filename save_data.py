@@ -122,7 +122,7 @@ def save_to_csv(df: pd.DataFrame, symbol: str, timeframe: str):
 # --- Example usage ---
 if __name__ == "__main__":
     df = get_ohlc("btcusd", "5",
-                  
+                  from_date="2025-08-1",
                   input_tz="Asia/Qatar")
     if not df.empty:
         save_to_csv(df, "btcusd", "5")
