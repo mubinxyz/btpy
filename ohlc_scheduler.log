@@ -1,0 +1,955 @@
+2025-08-31 21:24:07,906 INFO OHLC Scheduler starting up.
+2025-08-31 21:24:07,906 INFO Starting initial full sync: 10 symbols x 7 timeframes (up to 10000 candles each)
+2025-08-31 21:24:07,911 INFO [btcusd 1] fetching chunk 2025-08-24 22:14:07+03:00 -> 2025-08-25 14:54:07+03:00
+2025-08-31 21:24:07,911 INFO [ethusd 1] fetching chunk 2025-08-24 22:14:07+03:00 -> 2025-08-25 14:54:07+03:00
+2025-08-31 21:24:07,911 INFO [xrpusd 1] fetching chunk 2025-08-24 22:14:07+03:00 -> 2025-08-25 14:54:07+03:00
+2025-08-31 21:24:09,884 ERROR fetch_and_store exception for xrpusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:09,890 ERROR fetch_and_store exception for btcusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:09,897 INFO [usdx 1] fetching chunk 2025-08-24 22:14:07+03:00 -> 2025-08-25 14:54:07+03:00
+2025-08-31 21:24:09,904 INFO [eurusd 1] fetching chunk 2025-08-24 22:14:07+03:00 -> 2025-08-25 14:54:07+03:00
+2025-08-31 21:24:10,255 ERROR fetch_and_store exception for ethusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:10,264 INFO [gbpusd 1] fetching chunk 2025-08-24 22:14:07+03:00 -> 2025-08-25 14:54:07+03:00
+2025-08-31 21:24:11,836 ERROR fetch_and_store exception for eurusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:11,845 INFO [chfusd 1] fetching chunk 2025-08-24 22:14:07+03:00 -> 2025-08-25 14:54:07+03:00
+2025-08-31 21:24:11,846 ERROR fetch_and_store exception for usdx 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:11,851 INFO [audusd 1] fetching chunk 2025-08-24 22:14:07+03:00 -> 2025-08-25 14:54:07+03:00
+2025-08-31 21:24:12,160 ERROR fetch_and_store exception for gbpusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:12,169 INFO [nzdusd 1] fetching chunk 2025-08-24 22:14:07+03:00 -> 2025-08-25 14:54:07+03:00
+2025-08-31 21:24:13,728 ERROR fetch_and_store exception for audusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:13,737 INFO [usdcad 1] fetching chunk 2025-08-24 22:14:07+03:00 -> 2025-08-25 14:54:07+03:00
+2025-08-31 21:24:13,767 INFO [chfusd 1] chunk returned empty (end 2025-08-25 14:54:07+03:00). Stopping chunk loop.
+2025-08-31 21:24:13,770 INFO [chfusd 1] no new data returned.
+2025-08-31 21:24:13,771 INFO [btcusd 5] fetching chunk 2025-07-28 03:34:07+03:00 -> 2025-07-31 14:54:07+03:00
+2025-08-31 21:24:14,072 ERROR fetch_and_store exception for nzdusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:14,075 INFO [ethusd 5] fetching chunk 2025-07-28 03:34:07+03:00 -> 2025-07-31 14:54:07+03:00
+2025-08-31 21:24:15,812 ERROR fetch_and_store exception for btcusd 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:15,822 INFO [xrpusd 5] fetching chunk 2025-07-28 03:34:07+03:00 -> 2025-07-31 14:54:07+03:00
+2025-08-31 21:24:15,828 ERROR fetch_and_store exception for usdcad 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:15,844 INFO [usdx 5] fetching chunk 2025-07-28 03:34:07+03:00 -> 2025-07-31 14:54:07+03:00
+2025-08-31 21:24:15,973 ERROR fetch_and_store exception for ethusd 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:15,983 INFO [eurusd 5] fetching chunk 2025-07-28 03:34:07+03:00 -> 2025-07-31 14:54:07+03:00
+2025-08-31 21:24:17,886 ERROR fetch_and_store exception for usdx 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:17,888 ERROR fetch_and_store exception for xrpusd 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:17,896 INFO [gbpusd 5] fetching chunk 2025-07-28 03:34:07+03:00 -> 2025-07-31 14:54:07+03:00
+2025-08-31 21:24:17,899 INFO [chfusd 5] fetching chunk 2025-07-28 03:34:07+03:00 -> 2025-07-31 14:54:07+03:00
+2025-08-31 21:24:17,950 ERROR fetch_and_store exception for eurusd 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:17,956 INFO [audusd 5] fetching chunk 2025-07-28 03:34:07+03:00 -> 2025-07-31 14:54:07+03:00
+2025-08-31 21:24:19,851 ERROR fetch_and_store exception for gbpusd 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:19,861 INFO [nzdusd 5] fetching chunk 2025-07-28 03:34:07+03:00 -> 2025-07-31 14:54:07+03:00
+2025-08-31 21:24:19,881 INFO [chfusd 5] chunk returned empty (end 2025-07-31 14:54:07+03:00). Stopping chunk loop.
+2025-08-31 21:24:19,883 INFO [chfusd 5] no new data returned.
+2025-08-31 21:24:19,884 INFO [usdcad 5] fetching chunk 2025-07-28 03:34:07+03:00 -> 2025-07-31 14:54:07+03:00
+2025-08-31 21:24:19,919 ERROR fetch_and_store exception for audusd 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:19,936 INFO [btcusd 15] fetching chunk 2025-05-19 16:54:07+03:00 -> 2025-05-30 02:54:07+03:00
+2025-08-31 21:24:21,762 ERROR fetch_and_store exception for nzdusd 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:21,774 INFO [ethusd 15] fetching chunk 2025-05-19 16:54:07+03:00 -> 2025-05-30 02:54:07+03:00
+2025-08-31 21:24:21,843 ERROR fetch_and_store exception for usdcad 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:21,851 ERROR fetch_and_store exception for btcusd 15: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:21,860 INFO [xrpusd 15] fetching chunk 2025-05-19 16:54:07+03:00 -> 2025-05-30 02:54:07+03:00
+2025-08-31 21:24:21,869 INFO [usdx 15] fetching chunk 2025-05-19 16:54:07+03:00 -> 2025-05-30 02:54:07+03:00
+2025-08-31 21:24:23,664 ERROR fetch_and_store exception for ethusd 15: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:23,670 INFO [eurusd 15] fetching chunk 2025-05-19 16:54:07+03:00 -> 2025-05-30 02:54:07+03:00
+2025-08-31 21:24:23,795 ERROR fetch_and_store exception for xrpusd 15: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:23,805 INFO [gbpusd 15] fetching chunk 2025-05-19 16:54:07+03:00 -> 2025-05-30 02:54:07+03:00
+2025-08-31 21:24:23,831 ERROR fetch_and_store exception for usdx 15: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:23,841 INFO [chfusd 15] fetching chunk 2025-05-19 16:54:07+03:00 -> 2025-05-30 02:54:07+03:00
+2025-08-31 21:24:25,585 INFO [chfusd 15] chunk returned empty (end 2025-05-30 02:54:07+03:00). Stopping chunk loop.
+2025-08-31 21:24:25,593 INFO [chfusd 15] no new data returned.
+2025-08-31 21:24:25,594 INFO [audusd 15] fetching chunk 2025-05-19 16:54:07+03:00 -> 2025-05-30 02:54:07+03:00
+2025-08-31 21:24:25,728 ERROR fetch_and_store exception for eurusd 15: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:25,733 INFO [nzdusd 15] fetching chunk 2025-05-19 16:54:07+03:00 -> 2025-05-30 02:54:07+03:00
+2025-08-31 21:24:25,764 ERROR fetch_and_store exception for gbpusd 15: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:25,775 INFO [usdcad 15] fetching chunk 2025-05-19 16:54:07+03:00 -> 2025-05-30 02:54:07+03:00
+2025-08-31 21:24:27,496 ERROR fetch_and_store exception for audusd 15: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:27,506 INFO [btcusd 30] fetching chunk 2025-02-04 12:54:07+03:00 -> 2025-02-25 08:54:07+03:00
+2025-08-31 21:24:27,579 ERROR fetch_and_store exception for nzdusd 15: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:27,583 INFO [ethusd 30] fetching chunk 2025-02-04 12:54:07+03:00 -> 2025-02-25 08:54:07+03:00
+2025-08-31 21:24:27,804 ERROR fetch_and_store exception for usdcad 15: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:27,810 INFO [xrpusd 30] fetching chunk 2025-02-04 12:54:07+03:00 -> 2025-02-25 08:54:07+03:00
+2025-08-31 21:24:29,358 ERROR fetch_and_store exception for btcusd 30: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:29,368 INFO [usdx 30] fetching chunk 2025-02-04 12:54:07+03:00 -> 2025-02-25 08:54:07+03:00
+2025-08-31 21:24:29,728 ERROR fetch_and_store exception for xrpusd 30: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:29,733 INFO [eurusd 30] fetching chunk 2025-02-04 12:54:07+03:00 -> 2025-02-25 08:54:07+03:00
+2025-08-31 21:24:29,734 ERROR fetch_and_store exception for ethusd 30: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:29,741 INFO [gbpusd 30] fetching chunk 2025-02-04 12:54:07+03:00 -> 2025-02-25 08:54:07+03:00
+2025-08-31 21:24:31,224 ERROR fetch_and_store exception for usdx 30: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:31,228 INFO [chfusd 30] fetching chunk 2025-02-04 12:54:07+03:00 -> 2025-02-25 08:54:07+03:00
+2025-08-31 21:24:31,690 ERROR fetch_and_store exception for eurusd 30: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:31,699 ERROR fetch_and_store exception for gbpusd 30: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:31,699 INFO [audusd 30] fetching chunk 2025-02-04 12:54:07+03:00 -> 2025-02-25 08:54:07+03:00
+2025-08-31 21:24:31,712 INFO [nzdusd 30] fetching chunk 2025-02-04 12:54:07+03:00 -> 2025-02-25 08:54:07+03:00
+2025-08-31 21:24:33,325 INFO [chfusd 30] chunk returned empty (end 2025-02-25 08:54:07+03:00). Stopping chunk loop.
+2025-08-31 21:24:33,331 INFO [chfusd 30] no new data returned.
+2025-08-31 21:24:33,342 INFO [usdcad 30] fetching chunk 2025-02-04 12:54:07+03:00 -> 2025-02-25 08:54:07+03:00
+2025-08-31 21:24:33,850 ERROR fetch_and_store exception for audusd 30: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:33,859 ERROR fetch_and_store exception for nzdusd 30: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:33,895 INFO [btcusd 60] fetching chunk 2024-07-11 04:54:07+03:00 -> 2024-08-21 20:54:07+03:00
+2025-08-31 21:24:33,899 INFO [ethusd 60] fetching chunk 2024-07-11 04:54:07+03:00 -> 2024-08-21 20:54:07+03:00
+2025-08-31 21:24:35,327 ERROR fetch_and_store exception for usdcad 30: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:35,337 INFO [xrpusd 60] fetching chunk 2024-07-11 04:54:07+03:00 -> 2024-08-21 20:54:07+03:00
+2025-08-31 21:24:36,000 ERROR fetch_and_store exception for btcusd 60: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:36,008 ERROR fetch_and_store exception for ethusd 60: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:36,013 INFO [usdx 60] fetching chunk 2024-07-11 04:54:07+03:00 -> 2024-08-21 20:54:07+03:00
+2025-08-31 21:24:36,023 INFO [eurusd 60] fetching chunk 2024-07-11 04:54:07+03:00 -> 2024-08-21 20:54:07+03:00
+2025-08-31 21:24:37,295 ERROR fetch_and_store exception for xrpusd 60: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:37,301 INFO [gbpusd 60] fetching chunk 2024-07-11 04:54:07+03:00 -> 2024-08-21 20:54:07+03:00
+2025-08-31 21:24:37,976 ERROR fetch_and_store exception for usdx 60: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:37,982 ERROR fetch_and_store exception for eurusd 60: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:37,982 INFO [chfusd 60] fetching chunk 2024-07-11 04:54:07+03:00 -> 2024-08-21 20:54:07+03:00
+2025-08-31 21:24:37,988 INFO [audusd 60] fetching chunk 2024-07-11 04:54:07+03:00 -> 2024-08-21 20:54:07+03:00
+2025-08-31 21:24:39,172 ERROR fetch_and_store exception for gbpusd 60: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:39,184 INFO [nzdusd 60] fetching chunk 2024-07-11 04:54:07+03:00 -> 2024-08-21 20:54:07+03:00
+2025-08-31 21:24:39,735 INFO [chfusd 60] chunk returned empty (end 2024-08-21 20:54:07+03:00). Stopping chunk loop.
+2025-08-31 21:24:39,739 INFO [chfusd 60] no new data returned.
+2025-08-31 21:24:39,741 INFO [usdcad 60] fetching chunk 2024-07-11 04:54:07+03:00 -> 2024-08-21 20:54:07+03:00
+2025-08-31 21:24:39,963 ERROR fetch_and_store exception for audusd 60: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:39,968 INFO [btcusd 240] fetching chunk 2021-02-07 04:54:07+03:00 -> 2021-07-23 20:54:07+03:00
+2025-08-31 21:24:41,253 ERROR fetch_and_store exception for nzdusd 60: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:41,261 INFO [ethusd 240] fetching chunk 2021-02-07 04:54:07+03:00 -> 2021-07-23 20:54:07+03:00
+2025-08-31 21:24:41,602 ERROR fetch_and_store exception for usdcad 60: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:41,613 INFO [xrpusd 240] fetching chunk 2021-02-07 04:54:07+03:00 -> 2021-07-23 20:54:07+03:00
+2025-08-31 21:24:41,895 ERROR fetch_and_store exception for btcusd 240: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:41,905 INFO [usdx 240] fetching chunk 2021-02-07 04:54:07+03:00 -> 2021-07-23 20:54:07+03:00
+2025-08-31 21:24:43,228 ERROR fetch_and_store exception for ethusd 240: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:43,234 INFO [eurusd 240] fetching chunk 2021-02-07 04:54:07+03:00 -> 2021-07-23 20:54:07+03:00
+2025-08-31 21:24:43,325 ERROR fetch_and_store exception for xrpusd 240: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:43,332 INFO [gbpusd 240] fetching chunk 2021-02-07 04:54:07+03:00 -> 2021-07-23 20:54:07+03:00
+2025-08-31 21:24:43,804 ERROR fetch_and_store exception for usdx 240: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:43,804 INFO [chfusd 240] fetching chunk 2021-02-07 04:54:07+03:00 -> 2021-07-23 20:54:07+03:00
+2025-08-31 21:24:45,206 ERROR fetch_and_store exception for eurusd 240: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:45,213 INFO [audusd 240] fetching chunk 2021-02-07 04:54:07+03:00 -> 2021-07-23 20:54:07+03:00
+2025-08-31 21:24:45,310 ERROR fetch_and_store exception for gbpusd 240: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:45,316 INFO [nzdusd 240] fetching chunk 2021-02-07 04:54:07+03:00 -> 2021-07-23 20:54:07+03:00
+2025-08-31 21:24:45,714 INFO [chfusd 240] chunk returned empty (end 2021-07-23 20:54:07+03:00). Stopping chunk loop.
+2025-08-31 21:24:45,719 INFO [chfusd 240] no new data returned.
+2025-08-31 21:24:45,720 INFO [usdcad 240] fetching chunk 2021-02-07 04:54:07+03:00 -> 2021-07-23 20:54:07+03:00
+2025-08-31 21:24:47,176 ERROR fetch_and_store exception for audusd 240: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:47,179 INFO [btcusd D] fetching chunk 1998-04-15 20:54:07+03:00 -> 2001-01-09 20:54:07+03:00
+2025-08-31 21:24:47,344 ERROR fetch_and_store exception for nzdusd 240: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:47,351 INFO [ethusd D] fetching chunk 1998-04-15 20:54:07+03:00 -> 2001-01-09 20:54:07+03:00
+2025-08-31 21:24:47,614 ERROR fetch_and_store exception for usdcad 240: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:47,614 INFO [xrpusd D] fetching chunk 1998-04-15 20:54:07+03:00 -> 2001-01-09 20:54:07+03:00
+2025-08-31 21:24:48,966 INFO [btcusd D] chunk returned empty (end 2001-01-09 20:54:07+03:00). Stopping chunk loop.
+2025-08-31 21:24:48,966 INFO [btcusd D] no new data returned.
+2025-08-31 21:24:48,966 INFO [usdx D] fetching chunk 1998-04-15 20:54:07+03:00 -> 2001-01-09 20:54:07+03:00
+2025-08-31 21:24:49,175 INFO [ethusd D] chunk returned empty (end 2001-01-09 20:54:07+03:00). Stopping chunk loop.
+2025-08-31 21:24:49,177 INFO [ethusd D] no new data returned.
+2025-08-31 21:24:49,177 INFO [eurusd D] fetching chunk 1998-04-15 20:54:07+03:00 -> 2001-01-09 20:54:07+03:00
+2025-08-31 21:24:49,408 INFO [xrpusd D] chunk returned empty (end 2001-01-09 20:54:07+03:00). Stopping chunk loop.
+2025-08-31 21:24:49,408 INFO [xrpusd D] no new data returned.
+2025-08-31 21:24:49,408 INFO [gbpusd D] fetching chunk 1998-04-15 20:54:07+03:00 -> 2001-01-09 20:54:07+03:00
+2025-08-31 21:24:50,696 INFO [usdx D] chunk returned empty (end 2001-01-09 20:54:07+03:00). Stopping chunk loop.
+2025-08-31 21:24:50,702 INFO [usdx D] no new data returned.
+2025-08-31 21:24:50,703 INFO [chfusd D] fetching chunk 1998-04-15 20:54:07+03:00 -> 2001-01-09 20:54:07+03:00
+2025-08-31 21:24:51,589 ERROR fetch_and_store exception for eurusd D: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:51,590 ERROR fetch_and_store exception for gbpusd D: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:51,592 INFO [audusd D] fetching chunk 1998-04-15 20:54:07+03:00 -> 2001-01-09 20:54:07+03:00
+2025-08-31 21:24:51,600 INFO [nzdusd D] fetching chunk 1998-04-15 20:54:07+03:00 -> 2001-01-09 20:54:07+03:00
+2025-08-31 21:24:52,731 INFO [chfusd D] chunk returned empty (end 2001-01-09 20:54:07+03:00). Stopping chunk loop.
+2025-08-31 21:24:52,731 INFO [chfusd D] no new data returned.
+2025-08-31 21:24:52,737 INFO [usdcad D] fetching chunk 1998-04-15 20:54:07+03:00 -> 2001-01-09 20:54:07+03:00
+2025-08-31 21:24:53,684 ERROR fetch_and_store exception for audusd D: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:53,707 ERROR fetch_and_store exception for nzdusd D: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:54,811 ERROR fetch_and_store exception for usdcad D: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 316, in fetch_and_store
+    df = fetch_in_chunks(symbol, timeframe, from_date, to_date, chunk_candles=CHUNK_CANDLES, incremental=incremental)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\journy\btpy\ohlc_scheduler.py", line 211, in fetch_in_chunks
+    while current_start < to_date:
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:24:54,825 INFO Initial full sync finished.
+2025-08-31 21:24:54,826 INFO Starting scheduler loop (timezone=Asia/Qatar). Aligning to next minute...
+2025-08-31 21:25:00,003 INFO [2025-08-31T20:55:00+03:00] Due timeframes: ['1', '5']
+2025-08-31 21:25:00,239 ERROR fetch_and_store exception for btcusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,250 ERROR fetch_and_store exception for usdx 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,252 ERROR fetch_and_store exception for gbpusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,254 ERROR fetch_and_store exception for xrpusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,256 INFO [chfusd 1] fetching chunk 2025-08-24 22:15:00+03:00 -> 2025-08-25 14:55:00+03:00
+2025-08-31 21:25:00,258 ERROR fetch_and_store exception for ethusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,298 ERROR fetch_and_store exception for eurusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,405 ERROR fetch_and_store exception for audusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,470 ERROR fetch_and_store exception for btcusd 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,517 ERROR fetch_and_store exception for usdcad 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,522 ERROR fetch_and_store exception for nzdusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,562 ERROR fetch_and_store exception for ethusd 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,570 INFO [chfusd 5] fetching chunk 2025-07-28 03:35:00+03:00 -> 2025-07-31 14:55:00+03:00
+2025-08-31 21:25:00,611 ERROR fetch_and_store exception for xrpusd 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,682 ERROR fetch_and_store exception for usdx 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,691 ERROR fetch_and_store exception for eurusd 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,733 ERROR fetch_and_store exception for gbpusd 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,784 ERROR fetch_and_store exception for audusd 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,848 ERROR fetch_and_store exception for nzdusd 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:00,850 ERROR fetch_and_store exception for usdcad 5: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:25:02,287 INFO [chfusd 1] chunk returned empty (end 2025-08-25 14:55:00+03:00). Stopping chunk loop.
+2025-08-31 21:25:02,289 INFO [chfusd 1] no new data returned.
+2025-08-31 21:25:02,516 INFO [chfusd 5] chunk returned empty (end 2025-07-31 14:55:00+03:00). Stopping chunk loop.
+2025-08-31 21:25:02,516 INFO [chfusd 5] no new data returned.
+2025-08-31 21:26:00,000 INFO [2025-08-31T20:56:00+03:00] Due timeframes: ['1']
+2025-08-31 21:26:00,115 ERROR fetch_and_store exception for usdx 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:26:00,151 INFO [chfusd 1] fetching chunk 2025-08-24 22:16:00+03:00 -> 2025-08-25 14:56:00+03:00
+2025-08-31 21:26:00,259 ERROR fetch_and_store exception for ethusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:26:00,262 ERROR fetch_and_store exception for xrpusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:26:00,264 ERROR fetch_and_store exception for gbpusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:26:00,264 ERROR fetch_and_store exception for btcusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:26:00,265 ERROR fetch_and_store exception for eurusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:26:00,365 ERROR fetch_and_store exception for nzdusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:26:00,372 ERROR fetch_and_store exception for audusd 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:26:00,374 ERROR fetch_and_store exception for usdcad 1: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "D:\journy\btpy\ohlc_scheduler.py", line 312, in fetch_and_store
+    if from_date >= to_date:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "pandas\_libs\tslibs\timestamps.pyx", line 333, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-08-31 21:26:02,195 INFO [chfusd 1] chunk returned empty (end 2025-08-25 14:56:00+03:00). Stopping chunk loop.
+2025-08-31 21:26:02,195 INFO [chfusd 1] no new data returned.
+2025-08-31 21:26:23,244 INFO Scheduler stopped by user (KeyboardInterrupt).
+2025-08-31 21:26:25,347 INFO OHLC Scheduler starting up (timezone fix applied).
+2025-08-31 21:26:25,348 INFO Starting initial full sync: 10 symbols x 7 timeframes (up to 10000 candles each)
+2025-08-31 21:26:25,352 INFO [btcusd 1] fetching chunk 2025-08-24T22:16:25.348991+03:00 -> 2025-08-25T14:56:25.348991+03:00
+2025-08-31 21:26:25,353 INFO [ethusd 1] fetching chunk 2025-08-24T22:16:25.348991+03:00 -> 2025-08-25T14:56:25.348991+03:00
+2025-08-31 21:26:25,354 INFO [xrpusd 1] fetching chunk 2025-08-24T22:16:25.348991+03:00 -> 2025-08-25T14:56:25.348991+03:00
+2025-08-31 21:26:27,355 INFO [btcusd 1] fetching chunk 2025-08-25T15:27:00+03:00 -> 2025-08-26T08:07:00+03:00
+2025-08-31 21:26:27,432 INFO [ethusd 1] fetching chunk 2025-08-25T15:27:00+03:00 -> 2025-08-26T08:07:00+03:00
+2025-08-31 21:26:27,433 INFO [xrpusd 1] fetching chunk 2025-08-25T15:27:00+03:00 -> 2025-08-26T08:07:00+03:00
+2025-08-31 21:26:29,251 INFO [btcusd 1] fetching chunk 2025-08-26T08:38:00+03:00 -> 2025-08-27T01:18:00+03:00
+2025-08-31 21:26:29,433 INFO [ethusd 1] fetching chunk 2025-08-26T08:38:00+03:00 -> 2025-08-27T01:18:00+03:00
+2025-08-31 21:26:29,449 INFO [xrpusd 1] fetching chunk 2025-08-26T08:38:00+03:00 -> 2025-08-27T01:18:00+03:00
+2025-08-31 21:26:31,257 INFO [btcusd 1] fetching chunk 2025-08-27T01:49:00+03:00 -> 2025-08-27T18:29:00+03:00
+2025-08-31 21:26:31,452 INFO [ethusd 1] fetching chunk 2025-08-27T01:49:00+03:00 -> 2025-08-27T18:29:00+03:00
+2025-08-31 21:26:31,453 INFO [xrpusd 1] fetching chunk 2025-08-27T01:49:00+03:00 -> 2025-08-27T18:29:00+03:00
+2025-08-31 21:26:33,286 INFO [btcusd 1] fetching chunk 2025-08-27T19:00:00+03:00 -> 2025-08-28T11:40:00+03:00
+2025-08-31 21:26:33,489 INFO [xrpusd 1] fetching chunk 2025-08-27T19:00:00+03:00 -> 2025-08-28T11:40:00+03:00
+2025-08-31 21:26:33,565 INFO [ethusd 1] fetching chunk 2025-08-27T19:00:00+03:00 -> 2025-08-28T11:40:00+03:00
+2025-08-31 21:26:35,256 INFO [btcusd 1] fetching chunk 2025-08-28T12:11:00+03:00 -> 2025-08-29T04:51:00+03:00
+2025-08-31 21:26:35,621 INFO [xrpusd 1] fetching chunk 2025-08-28T12:11:00+03:00 -> 2025-08-29T04:51:00+03:00
+2025-08-31 21:26:35,648 INFO [ethusd 1] fetching chunk 2025-08-28T12:11:00+03:00 -> 2025-08-29T04:51:00+03:00
+2025-08-31 21:26:37,297 INFO [btcusd 1] fetching chunk 2025-08-29T05:22:00+03:00 -> 2025-08-29T22:02:00+03:00
+2025-08-31 21:26:37,820 INFO [ethusd 1] fetching chunk 2025-08-29T05:22:00+03:00 -> 2025-08-29T22:02:00+03:00
+2025-08-31 21:26:37,822 INFO [xrpusd 1] fetching chunk 2025-08-29T05:22:00+03:00 -> 2025-08-29T22:02:00+03:00
+2025-08-31 21:26:39,430 INFO [btcusd 1] fetching chunk 2025-08-29T22:33:00+03:00 -> 2025-08-30T15:13:00+03:00
+2025-08-31 21:26:40,402 INFO [xrpusd 1] fetching chunk 2025-08-29T22:33:00+03:00 -> 2025-08-30T15:13:00+03:00
+2025-08-31 21:26:40,405 INFO [ethusd 1] fetching chunk 2025-08-29T22:33:00+03:00 -> 2025-08-30T15:13:00+03:00
+2025-08-31 21:26:41,446 INFO [btcusd 1] fetching chunk 2025-08-30T15:44:00+03:00 -> 2025-08-31T08:24:00+03:00
+2025-08-31 21:26:42,357 INFO [xrpusd 1] fetching chunk 2025-08-30T15:44:00+03:00 -> 2025-08-31T08:24:00+03:00
+2025-08-31 21:26:42,437 INFO [ethusd 1] fetching chunk 2025-08-30T15:44:00+03:00 -> 2025-08-31T08:24:00+03:00
+2025-08-31 21:26:43,454 INFO [btcusd 1] fetching chunk 2025-08-31T08:55:00+03:00 -> 2025-08-31T20:56:25.348991+03:00
+2025-08-31 21:26:44,334 INFO [xrpusd 1] fetching chunk 2025-08-31T08:55:00+03:00 -> 2025-08-31T20:56:25.348991+03:00
+2025-08-31 21:26:44,435 INFO [ethusd 1] fetching chunk 2025-08-31T08:55:00+03:00 -> 2025-08-31T20:56:25.348991+03:00
+2025-08-31 21:26:48,962 INFO Saved 9700 rows to csv_data\csv_btcusd_1.csv (total 10000)
+2025-08-31 21:26:48,979 INFO [usdx 1] fetching chunk 2025-08-24T22:16:25.348991+03:00 -> 2025-08-25T14:56:25.348991+03:00
+2025-08-31 21:26:49,790 INFO Saved 9700 rows to csv_data\csv_xrpusd_1.csv (total 10000)
+2025-08-31 21:26:49,792 INFO [eurusd 1] fetching chunk 2025-08-24T22:16:25.348991+03:00 -> 2025-08-25T14:56:25.348991+03:00
+2025-08-31 21:26:49,798 INFO Saved 9700 rows to csv_data\csv_ethusd_1.csv (total 10000)
+2025-08-31 21:26:49,800 INFO [gbpusd 1] fetching chunk 2025-08-24T22:16:25.348991+03:00 -> 2025-08-25T14:56:25.348991+03:00
+2025-08-31 21:26:51,435 INFO [usdx 1] fetching chunk 2025-08-25T15:27:00+03:00 -> 2025-08-26T08:07:00+03:00
+2025-08-31 21:26:51,929 INFO [eurusd 1] fetching chunk 2025-08-25T15:27:00+03:00 -> 2025-08-26T08:07:00+03:00
+2025-08-31 21:26:51,932 INFO [gbpusd 1] fetching chunk 2025-08-25T15:27:00+03:00 -> 2025-08-26T08:07:00+03:00
+2025-08-31 21:26:53,429 INFO [usdx 1] fetching chunk 2025-08-26T08:38:00+03:00 -> 2025-08-27T01:18:00+03:00
+2025-08-31 21:26:53,977 INFO [gbpusd 1] fetching chunk 2025-08-26T08:38:00+03:00 -> 2025-08-27T01:18:00+03:00
+2025-08-31 21:26:53,977 INFO [eurusd 1] fetching chunk 2025-08-26T08:38:00+03:00 -> 2025-08-27T01:18:00+03:00
+2025-08-31 21:26:55,483 INFO [usdx 1] fetching chunk 2025-08-27T00:30:00+03:00 -> 2025-08-27T17:10:00+03:00
+2025-08-31 21:26:56,150 INFO [eurusd 1] fetching chunk 2025-08-27T01:49:00+03:00 -> 2025-08-27T18:29:00+03:00
+2025-08-31 21:26:56,152 INFO [gbpusd 1] fetching chunk 2025-08-27T01:49:00+03:00 -> 2025-08-27T18:29:00+03:00
+2025-08-31 21:26:57,600 INFO [usdx 1] fetching chunk 2025-08-27T17:41:00+03:00 -> 2025-08-28T10:21:00+03:00
+2025-08-31 21:26:58,187 INFO [gbpusd 1] fetching chunk 2025-08-27T19:00:00+03:00 -> 2025-08-28T11:40:00+03:00
+2025-08-31 21:26:58,443 INFO [eurusd 1] fetching chunk 2025-08-27T19:00:00+03:00 -> 2025-08-28T11:40:00+03:00
+2025-08-31 21:26:59,621 INFO [usdx 1] fetching chunk 2025-08-28T10:52:00+03:00 -> 2025-08-29T03:32:00+03:00
+2025-08-31 21:27:00,074 INFO [gbpusd 1] fetching chunk 2025-08-28T12:11:00+03:00 -> 2025-08-29T04:51:00+03:00
+2025-08-31 21:27:00,628 INFO [eurusd 1] fetching chunk 2025-08-28T12:11:00+03:00 -> 2025-08-29T04:51:00+03:00
+2025-08-31 21:27:01,618 INFO [usdx 1] fetching chunk 2025-08-29T04:03:00+03:00 -> 2025-08-29T20:43:00+03:00
+2025-08-31 21:27:02,086 INFO [gbpusd 1] fetching chunk 2025-08-29T05:22:00+03:00 -> 2025-08-29T22:02:00+03:00
+2025-08-31 21:27:02,593 INFO [eurusd 1] fetching chunk 2025-08-29T05:22:00+03:00 -> 2025-08-29T22:02:00+03:00
+2025-08-31 21:27:03,662 INFO [usdx 1] fetching chunk 2025-08-29T21:14:00+03:00 -> 2025-08-30T13:54:00+03:00
+2025-08-31 21:27:04,035 INFO [gbpusd 1] fetching chunk 2025-08-29T22:33:00+03:00 -> 2025-08-30T15:13:00+03:00
+2025-08-31 21:27:04,630 INFO [eurusd 1] fetching chunk 2025-08-29T22:33:00+03:00 -> 2025-08-30T15:13:00+03:00
+2025-08-31 21:27:05,551 INFO [usdx 1] fetching chunk 2025-08-30T00:30:00+03:00 -> 2025-08-30T17:10:00+03:00
+2025-08-31 21:27:06,020 INFO [gbpusd 1] fetching chunk 2025-08-30T00:29:00+03:00 -> 2025-08-30T17:09:00+03:00
+2025-08-31 21:27:06,307 INFO [eurusd 1] fetching chunk 2025-08-30T00:30:00+03:00 -> 2025-08-30T17:10:00+03:00
+2025-08-31 21:27:07,910 INFO [usdx 1] fetching chunk 2025-08-30T00:30:00+03:00 -> 2025-08-30T17:10:00+03:00
+2025-08-31 21:27:08,355 INFO [gbpusd 1] fetching chunk 2025-08-30T00:29:00+03:00 -> 2025-08-30T17:09:00+03:00
+2025-08-31 21:27:08,683 INFO [eurusd 1] fetching chunk 2025-08-30T00:30:00+03:00 -> 2025-08-30T17:10:00+03:00
+2025-08-31 21:27:10,168 INFO [usdx 1] fetching chunk 2025-08-30T00:30:00+03:00 -> 2025-08-30T17:10:00+03:00
+2025-08-31 21:27:10,759 INFO [gbpusd 1] fetching chunk 2025-08-30T00:29:00+03:00 -> 2025-08-30T17:09:00+03:00
+2025-08-31 21:27:11,159 INFO [eurusd 1] fetching chunk 2025-08-30T00:30:00+03:00 -> 2025-08-30T17:10:00+03:00
