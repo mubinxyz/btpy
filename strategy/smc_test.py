@@ -1,3 +1,5 @@
+# strategy/smc_test.py
+
 from backtesting import Strategy, Backtest
 import pandas as pd
 import pandas_ta as ta
@@ -5,9 +7,8 @@ import numpy as np
 from backtesting.lib import plot_heatmaps, crossover, barssince, FractionalBacktest, resample_apply
 from smartmoneyconcepts import smc
 
-smc.bos_choch()
 csv_data_name = "btcusd_5"
-df = pd.read_csv(f'../csv_data/csv_{csv_data_name}.csv', parse_dates=True, index_col=[0])
+df = pd.read_csv(f'../csv_data/csv_{csv_data_name}.csv', parse_dates=True, index_col=[0])[:500]
 
 # print(df.head())
 df.info()
@@ -126,16 +127,16 @@ class SMC(Strategy):
 
     def init(self):
 
-        self.atr = self.I(atr_array, self.data, self.atr_period)
+        # self.atr = self.I(atr_array, self.data, self.atr_period)
         self.fvg = self.I(fvg_signal, self.data, plot=False)
-        self.swing_hl = self.I(swing_highs_lows_series, self.data, swing_length=self.swing_length)
+        self.swing_hl = self.I(swing_highs_lows_series, self.data, swing_length=self.swing_length, plot=True)
         self.bos = self.I(bos_signal, self.data, swing_length=self.swing_length, close_break=self.bos_close_break, plot=False)
         self.ob  = self.I(ob_signal, self.data, swing_length=self.swing_length, close_mitigation=self.ob_mitigation, plot=False)
-        self.liq = self.I(liquidity_signal, self.data, swing_length=self.swing_length, range_percent=self.liq_range, plot=False)
-        self.prev_h = self.I(prev_high, self.data, time_frame=self.prev_timeframe, plot=False)
-        self.prev_l = self.I(prev_low, self.data, time_frame=self.prev_timeframe, plot=False)
-        self.sess = self.I(session_open, self.data, session=self.session_name, time_zone=self.session_tz)
-        self.retr = self.I(retrace_level, self.data, swing_length=self.swing_length, plot=False)
+        # self.liq = self.I(liquidity_signal, self.data, swing_length=self.swing_length, range_percent=self.liq_range, plot=False)
+        # self.prev_h = self.I(prev_high, self.data, time_frame=self.prev_timeframe, plot=False)
+        # self.prev_l = self.I(prev_low, self.data, time_frame=self.prev_timeframe, plot=False)
+        # self.sess = self.I(session_open, self.data, session=self.session_name, time_zone=self.session_tz)
+        # self.retr = self.I(retrace_level, self.data, swing_length=self.swing_length, plot=False)
 
         self.sl_price = None
         self.tp_price = None
@@ -143,10 +144,10 @@ class SMC(Strategy):
     def next(self):
         # print(self.fvg[0][-1])
 
-        # print(self.swing_hl[0][-1], self.swing_hl[1][-1])
+        print(self.swing_hl[0][-1], self.swing_hl[1][-1])
 
-        if self.data.Close[-1] > self.data.Open[-1]:
-            print(f"Index: {self.data.index[-1]}, bul/bear: {self.fvg[0][-1]}, Top: {self.fvg[1][-1]}, Bottom: {self.fvg[2][-1]}, mitig_index: {self.fvg[3][-1]}")
+        # if self.data.Close[-1] > self.data.Open[-1]:
+        #     print(f"Index: {self.data.index[-1]}, bul/bear: {self.fvg[0][-1]}, Top: {self.fvg[1][-1]}, Bottom: {self.fvg[2][-1]}, mitig_index: {self.fvg[3][-1]}")
 
         # print(f"bos: {self.bos[0][-1]}")
 
@@ -167,4 +168,6 @@ if __name__ == "__main__":
     bt = Backtest(df, SMC, cash=10000, commission=0.001)
     stats = bt.run()
     print(stats)
-    bt.plot(filename="plots/eurusd4h.html", resample=False)
+    short_ssma = stats['_strategy'].short_ssma_length
+    long_ssma = stats['_strategy'].long_ssma_length
+    bt.plot(filename=f'plots/{csv_data_name}_shortma_{short_ssma}_longma_{long_ssma}', resample=False, plot_volume=False)
